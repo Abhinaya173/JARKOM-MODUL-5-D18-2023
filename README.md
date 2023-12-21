@@ -2,6 +2,33 @@
 - Abhinaya Radiansyah Listiyanto (5025211173) 
 - Fauzi Rizki Pratama (5025211220)
 
+# Pembagian Subnet
+<img width="1112" alt="Rute" src="https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/f26db28f-303b-43af-bfe2-60f34dd4fb72">
+
+# Tree
+<img width="1899" alt="Untitled" src="https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/b5509eea-eb22-41f6-88c0-0bb537e9faec">
+
+# Pembagian IP
+![image](https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/a8987aad-c13a-4675-b640-d674cf628390)
+
+# Konfigurasi Route
+Aura
+![image](https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/a1bca767-650b-4a04-91e5-4ad6e770b0a6)
+
+Heiter
+![image](https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/f3e4e655-c7df-46e5-b7a5-ccc3aaffd8b9)
+
+Frieren
+![image](https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/3b71f202-6a36-400d-b679-68c854c84515)
+
+Himmel
+![image](https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/b53fde0e-3fcd-43b1-95ce-be66ee11dedb)
+
+Fern
+![image](https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/b67c7470-6225-4bb1-a0bd-7e568f7eabfe)
+
+# Konfigurasi DNS
+
 # Soal 1
 ## Pertanyaan:
 Agar topologi yang kalian buat dapat mengakses keluar, kalian diminta untuk mengkonfigurasi Aura menggunakan iptables, tetapi tidak ingin menggunakan MASQUERADE.
