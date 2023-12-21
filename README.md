@@ -3,7 +3,7 @@
 - Fauzi Rizki Pratama (5025211220)
 
 # Pembagian Subnet
-<img width="1112" alt="Rute" src="https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/f26db28f-303b-43af-bfe2-60f34dd4fb72">
+![image](https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/5d85abc9-8f5f-4cb2-ade7-09049d86d3f5)
 
 # Tree
 <img width="1899" alt="Untitled" src="https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/b5509eea-eb22-41f6-88c0-0bb537e9faec">
