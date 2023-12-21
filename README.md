@@ -13,18 +13,23 @@
 
 # Konfigurasi Route
 - Aura:
+  
 ![image](https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/a1bca767-650b-4a04-91e5-4ad6e770b0a6)
 
 - Heiter:
+  
 ![image](https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/f3e4e655-c7df-46e5-b7a5-ccc3aaffd8b9)
 
 - Frieren:
+
 ![image](https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/3b71f202-6a36-400d-b679-68c854c84515)
 
 - Himmel:
+
 ![image](https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/b53fde0e-3fcd-43b1-95ce-be66ee11dedb)
 
 - Fern:
+
 ![image](https://github.com/Abhinaya173/JARKOM-MODUL-5-D18-2023/assets/114990549/b67c7470-6225-4bb1-a0bd-7e568f7eabfe)
 
 # Konfigurasi DNS
