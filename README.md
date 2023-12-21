@@ -73,8 +73,8 @@ Lakukan pembatasan sehingga koneksi SSH pada Web Server hanya dapat dilakukan ol
 ## Jawaban:
 Sein & Stark
 ```
-iptables -A INPUT -p tcp --dport 22 -s 192.200.8.0/22 -j ACCEPT
-iptables -A INPUT -p tcp --dport 22 -j DROP
+iptables -A INPUT -p tcp --dport 80 -s 192.200.8.0/22 -j ACCEPT
+iptables -A INPUT -p tcp --dport 80 -j DROP
 ```
 baris 1 mengizinkan paket TCP yang menuju ke port 22 dan berasal dari IP GrobeFores untuk melewati chain INPUT
 baris 2 semua paket TCP yang menuju ke port 22 akan didrop
@@ -85,8 +85,8 @@ Selain itu, akses menuju WebServer hanya diperbolehkan saat jam kerja yaitu Seni
 ## Jawaban:
 ```
 # jam kerja (Senin-Jumat pukul 08.00-16.00)
-iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m time --weekdays Mon,Tue,Wed,Thu,Fri --timestart 08:00 --timestop 16:00 -j ACCEPT
-iptables -A INPUT -p tcp --dport 22 -m state --state NEW -j DROP
+iptables -A INPUT -p tcp --dport 80 -m state --state NEW -m time --weekdays Mon,Tue,Wed,Thu,Fri --timestart 08:00 --timestop 16:00 -j ACCEPT
+iptables -A INPUT -p tcp --dport 80 -m state --state NEW -j DROP
 ```
 baris 1 aturan yang memungkinkan koneksi SSH hanya pada hari Senin sampai Jumat pada rentang waktu antara pukul 08:00 dan 16:00.
 baris 2 aturan yang menolak koneksi SSH di luar jadwal kerja yang telah ditetapkan.
@@ -97,14 +97,14 @@ Lalu, karena ternyata terdapat beberapa waktu di mana network administrator dari
 ## Jawaban:
 ```
 # jam kerja (Senin-Jumat pukul 08.00-16.00)
-iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m time --weekdays Mon,Tue,Wed,Thu,Fri --timestart 08:00 --timestop 11:00 -j ACCEPT
-iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m time --weekdays Mon,Tue,Wed,Thu,Fri --timestart 13:00 --timestop 16:00 -j ACCEPT
+iptables -A INPUT -p tcp --dport 80 -m state --state NEW -m time --weekdays Mon,Tue,Wed,Thu,Fri --timestart 08:00 --timestop 11:00 -j ACCEPT
+iptables -A INPUT -p tcp --dport 80 -m state --state NEW -m time --weekdays Mon,Tue,Wed,Thu,Fri --timestart 13:00 --timestop 16:00 -j ACCEPT
 
 # waktu istirahat (Senin-Kamis pukul 12.00-13.00)
-iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m time --weekdays Mon,Tue,Wed,Thu --timestart 12:00 --timestop 13:00 -j DROP
+iptables -A INPUT -p tcp --dport 80 -m state --state NEW -m time --weekdays Mon,Tue,Wed,Thu --timestart 12:00 --timestop 13:00 -j DROP
 
 # waktu Jumatan (Jumat pukul 11.00-13.00)
-iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m time --weekdays Fri --timestart 11:00 --timestop 13:00 -j DROP
+iptables -A INPUT -p tcp --dport 80 -m state --state NEW -m time --weekdays Fri --timestart 11:00 --timestop 13:00 -j DROP
 ```
 untuk no6 ini hampir sama dengan no 5 yang membedakan hanya peletakan jamnya pada time start dan time stop.
 
