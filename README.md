@@ -64,6 +64,7 @@ baris 1 berfungsi untuk  menghapus semua rules dari tabel iptables, baris 2 dan 
 Kepala Suku North Area meminta kalian untuk membatasi DHCP dan DNS Server hanya dapat dilakukan ping oleh maksimal 3 device secara bersamaan, selebihnya akan di drop.
 ## Jawaban:
 ```
+iptables -A INPUT -p icmp -m connlimit --connlimit-above 3 --connlimit-mask 0 -j DROP
 
 ```
 
